@@ -5,8 +5,6 @@ document.querySelectorAll('.formula-box').forEach(div => {
     const formula = formulaElement.getAttribute('evaluator');
     const output = div.querySelector('output');
     const formulaText = div.querySelector('.formula-text');
-
-    // Inject the formula explicitly above each formula box
     formulaText.textContent = `Formula: ${formula}`;
 
     function calculate() {
